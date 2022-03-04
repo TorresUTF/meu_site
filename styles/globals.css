@@ -34,12 +34,9 @@ body {
 
 .navbar {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--bg-primary);
-  width: 5rem;
   height: 100vh;
+  width: 5em;
 }
 
 main {
@@ -50,13 +47,33 @@ main {
 }
 
 .navbar-bar {
+  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.link-item {
-  list-style: none;
 
+.link-item {
+  width: 100%;
+  height: 5em;
+  list-style: none;
+  color: var(--text-secondary);
+  padding:1.5em 0;
 }
 
 .link-item:last-child {
   margin-top: auto;
+}
+
+.link-item:hover .link-text{
+  color: var(--bg-primary);
+  transition: 400ms ease;
+  filter: brightness(1.8);
+}
+
+.link-item:hover {
+  background-color: #C7CCDB;
+  filter: brightness(0.8);
+  transition: 400ms ease;
 }
