@@ -6,17 +6,17 @@ export default function Home() {
     <div className={styles.container}>
       <nav className='navbar'>
         <ul className='navbar-bar'>
-          <li className='link-item'>
-            <a className='link-text' href="#">oi</a>
+          <li className='nav-item'>
+            <a className='nav-link' href="#">👉</a>
           </li>
-          <li className='link-item'>
-            <a className='link-text' href="#">oi</a>
+          <li className='nav-item'>
+            <a className='nav-link' href="#">✌️</a>
           </li>
-          <li className='link-item'>
-            <a className='link-text' href="#">oi</a>
+          <li className='nav-item'>
+            <a className='nav-link' href="#">💪</a>
           </li>
-          <li className='link-item'>
-            <a className='link-text' href="#">last</a>
+          <li className='nav-item'>
+            <a className='nav-link' href="#">🤟</a>
           </li>
         </ul>
       </nav>
