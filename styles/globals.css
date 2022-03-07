@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 html,
 body,
 ul {
@@ -5,9 +7,10 @@ ul {
   padding: 0;
 }
 
+
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: 'Varela Round', sans-serif;
   --text-primary: #FFD449;
   --text-secondary: #C7CCDB;
   --bg-primary: #232528;
@@ -34,6 +37,10 @@ main {
   background-color: var(--text-secondary);
 }
 
+h1{
+  margin: 0 1.5rem;
+}
+
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -52,8 +59,41 @@ main {
   align-items: center;
   justify-content: center;
   height: 5em;
+  transition: var(--transition-speed) ease;
 }
 
 .nav-item:last-child{
   margin-top: auto;
 }
+
+.nav-item:hover {
+  background-color: #C7CCDB;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  size: 1em;
+  text-decoration: none;
+}
+
+.link-text{
+  color: var(--text-secondary);
+  display: none;
+  margin-right: 1em;
+}
+
+.navbar:hover .navbar-bar{
+  width: 12rem;
+}
+
+.navbar:hover .link-text{
+  display: block;
+}
+
+.nav-item:hover .link-text{
+  color: var(--bg-primary);
+} 
+
+
